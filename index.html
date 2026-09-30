@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!-- SEO + OPEN GRAPH META  —  EDIT HERE                            -->
+  <!-- Update the URL, image path, and description for your site.    -->
+  <!-- ============================================================= -->
+  <title>Faiz - Data &amp; AI Engineer</title>
+  <meta name="description" content="Faiz is a Data &amp; AI Engineer based in Chennai, India — building reliable data platforms and shipping practical AI/LLM systems." />
+  <meta name="author" content="Faiz" />
+  <meta name="theme-color" content="#0b0d12" />
+
+  <!-- Open Graph (Facebook, LinkedIn, Slack, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Faiz — Data &amp; AI Engineer" />
+  <meta property="og:description" content="Data engineering foundation + emerging AI/LLM expertise. Based in Chennai, India." />
+  <!-- EDIT HERE: replace with your live URL once deployed -->
+  <meta property="og:url" content="https://your-username.github.io/" />
+  <!-- EDIT HERE: replace with an absolute URL to a 1200×630 preview image -->
+  <meta property="og:image" content="https://your-username.github.io/assets/og-image.png" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Faiz — Data &amp; AI Engineer" />
+  <meta name="twitter:description" content="Data engineering foundation + emerging AI/LLM expertise. Based in Chennai, India." />
+  <meta name="twitter:image" content="https://your-username.github.io/assets/og-image.png" />
+
+  <!-- Favicon (optional) — EDIT HERE: drop a favicon.ico or .svg in the root -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>" />
+
+  <!-- ============================================================= -->
+  <!-- FONTS  —  Space Grotesk (display) + Inter (body) from Google  -->
+  <!-- Preconnect keeps the request fast.                            -->
+  <!-- ============================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Prevent a flash of the wrong theme: apply the saved theme before paint -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* ignore — default stays dark */ }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================= -->
+  <!-- STICKY TOP NAVIGATION                                         -->
+  <!-- ============================================================= -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__brand" aria-label="Faiz - home">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span class="nav__name">FaizFolio</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <!-- Theme toggle -->
+        <button class="theme-toggle" id="theme-toggle" type="button"
+                aria-label="Toggle light and dark theme" aria-pressed="false">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="nav__toggle" id="nav-toggle" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================= -->
+    <!-- HERO                                                          -->
+    <!-- ============================================================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Decorative animated aurora background -->
+      <div class="hero__aurora" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__main">
+        <p class="hero__eyebrow reveal" data-reveal>
+          <span class="dot" aria-hidden="true"></span>
+          Data Engineer Focused on Innovation and Impact
+        </p>
+
+        <!-- EDIT HERE: your name -->
+        <h1 class="hero__title reveal" data-reveal id="hero-heading">
+          FAIZ AHAMED R
+        </h1>
+
+        <!-- EDIT HERE: one-line headline -->
+        <p class="hero__headline reveal" data-reveal>
+          Data &amp; AI Engineer
+        </p>
+
+        <!-- EDIT HERE: short tagline -->
+        <p class="hero__tagline reveal" data-reveal>
+          Data Engineer with 3+ years of experience in ETL, ELT and analytics platforms. 
+          Experienced in building scalable data pipelines, optimizing data workflows, and ensuring reliable enterprise data operations using SQL, Python, Apache Spark, Databricks, Azure Data Factory (ADF), Microsoft Fabric and Microsoft Power BI. 
+          Combining a strong data engineering foundation with emerging AI and LLM expertise, I develop practical solutions that transform data into actionable business insights.
+        </p>
+
+        <div class="hero__cta reveal" data-reveal>
+          <a class="btn btn--primary" href="#projects">
+            View Work
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#contact">
+            Get in Touch
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        </div><!-- /.hero__main -->
+
+        <!-- Focus-area box — sits to the right of the hero copy -->
+        <aside class="hero__aside reveal" data-reveal>
+          <span class="hero__aside-label">Focus areas</span>
+          <ul class="hero__badges" aria-label="Focus areas">
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Apache Spark</li>
+            <li>Databricks</li>
+            <li>Azure Data Factory</li>
+            <li>Microsoft Fabric</li>
+            <li>Microsoft Power BI</li>
+            <li>Informatica Power Center</li>
+            <li>Microsoft Azure</li>
+            <li>Agentic AI (Claude, Codex, Amazon Q)</li>
+            <li>LangChain & LangGraph with RAG</li>
+            <li>AI Automation (N8N)</li>
+          </ul>
+        </aside>
+      </div><!-- /.hero__inner -->
+
+      <!-- <a class="hero__scroll" href="#about" aria-label="Scroll to About">
+        <span aria-hidden="true"></span>
+      </a> -->
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- ABOUT                                                         -->
+    <!-- ============================================================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__head reveal" data-reveal>
+          <span class="section__label">01 — About</span>
+          <h2 class="section__title" id="about-heading">A dual foundation: data &amp; AI</h2>
+        </div>
+
+        <div class="about">
+          <!-- EDIT HERE: professional summary -->
+          <div class="about__body reveal" data-reveal>
+            <p>
+              I'm a Data &amp; AI Engineer based in Chennai, India, currently at
+              <strong>Cognizant</strong>. I design and operate production data
+              platforms — streaming and batch pipelines, lakehouse architectures,
+              and orchestration — while increasingly focusing on applied AI:
+              retrieval-augmented generation, the LLM API & MCP, prompt engineering,
+              and automation.
+            </p>
+            <p>
+              <strong>My goal is simple:</strong> turn messy, high-volume data into products people can trust, and layer intelligent, LLM-powered experiences on top. I'm currently looking for a full-time Data or AI Engineering role where I can own pipelines end to end and build LLM-powered features on top of them. I do my best work with teams that care about craft and clarity.
+            </p>
+          </div>
+
+          <!-- Highlights strip -->
+          <ul class="about__highlights reveal" data-reveal aria-label="Highlights">
+            <li class="highlight">
+              <!-- EDIT HERE: years of experience -->
+              <span class="highlight__num" data-count="3" data-suffix="+">3+</span>
+              <span class="highlight__label">Years of experience</span>
+            </li>
+            <li class="highlight">
+              <span class="highlight__num">Data & AI</span>
+              <span class="highlight__label">Core domains</span>
+            </li>
+            <li class="highlight">
+              <!-- EDIT HERE: location -->
+              <span class="highlight__num">Chennai, TN, India</span>
+              <span class="highlight__label">Based in · remote-friendly</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SKILLS                                                        -->
+    <!-- ============================================================= -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__head reveal" data-reveal>
+          <span class="section__label">02 — Skills</span>
+          <h2 class="section__title" id="skills-heading">Tools I reach for</h2>
+        </div>
+
+        <!-- EDIT HERE: add / remove skills inside each group -->
+        <div class="skills">
+          <article class="skill-card reveal" data-reveal>
+            <header class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+              </span>
+              <h3>Data Engineering</h3>
+            </header>
+            <ul class="tags">
+              <li>Microsoft Azure</li>
+              <li>Databricks</li>
+              <li>Azure Data Factory</li>
+              <li>Microsoft Fabric</li>
+              <li>Apache Spark</li>
+              <li>Databricks CI/CD</li>
+              <li>GitHub Actions</li>
+              <li>MS SQL Server</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-reveal>
+            <header class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+              </span>
+              <h3>Data Architecture</h3>
+            </header>
+            <ul class="tags">
+              <li>Data Modeling</li>
+              <li>Data Warehousing</li>
+              <li>Lakehouse Architecture</li>
+              <li>Data Orchestration</li>
+              <li>Data Quality</li>
+              <li>ETL / ELT Pipelines</li>
+              <li>Performance Tuning & Optimization</li>  
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-reveal>
+            <header class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9zM9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+              </span>
+              <h3>AI & LLMs</h3>
+            </header>
+            <ul class="tags">
+              <li>RAG Systems</li>
+              <li>Prompt Engineering</li>
+              <li>AI Automation (N8N)</li>
+              <li>LLM APIs</li>
+              <li>Model Context Protocl</li>
+              <li>Vector Search</li>
+              <li>LLM Agents (Claude)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-reveal>
+            <header class="skill-card__head">
+              <span class="skill-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 2 2 6-6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2z"/></svg>
+              </span>
+              <h3>Languages &n BI</h3>
+            </header>
+            <ul class="tags">
+              <li>SQL</li>
+              <li>Python</li>
+              <li>PySpark</li>
+              <li>Power BI</li>
+              <li>Git</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- PROJECTS                                                      -->
+    <!-- ============================================================= -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section__head reveal" data-reveal>
+          <span class="section__label">03 — Projects</span>
+          <h2 class="section__title" id="projects-heading">Look at my work</h2>
+        </div>
+
+        <!-- EDIT HERE: duplicate a .project card for each project -->
+        <div class="projects">
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">01</span>
+              <div class="project__links">
+                <a href="https://github.com/faizahamed2001/SQL-Data-Warehousing-and-Analytics-Project-2026" target="_blank" aria-label="GitHub repository for Project 4" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/SQL-Data-Warehousing-and-Analytics-Project-2026" target="_blank" aria-label="Live demo for Project 4" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <h3 class="project__title">Data Warehouse and Analytics in SQL Project</h3>
+            <p class="project__desc">
+              A SQL-first data warehouse — layered ETL, star schema modeling, and analytical queries answering real business questions.
+            </p>
+            <ul class="tags tags--sm">
+              <li>SQL</li>
+              <li>Data Modeling</li>
+              <li>Data Warehousing</li>
+              <li>Data Analytics</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">02</span>
+              <div class="project__links">
+                <a href="https://github.com/faizahamed2001/Microsoft-Azure-Databricks-End-to-End-Project-1" target="_blank" aria-label="GitHub repository for Project 5" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/Microsoft-Azure-Databricks-End-to-End-Project-1" target="_blank" aria-label="Live demo for Project 5" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <h3 class="project__title">Microsoft Azure Databricks End to End Project</h3>
+            <p class="project__desc">
+              Medallion lakehouse pipeline on Azure Databricks — bronze to gold, orchestrated with ADF and surfaced in Power BI.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Azure Databricks</li>
+              <li>Power BI</li>
+              <li>GitHub</li>
+              <li>ADLS (Gen 2)</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">03</span>
+              <div class="project__links">
+                <a href="https://github.com/faizahamed2001/Azure-Databricks-DE-Streaming-Data-project-2026" target="_blank" aria-label="GitHub repository for Project 2" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/Azure-Databricks-DE-Streaming-Data-project-2026" target="_blank" aria-label="Live demo for Project 2" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <h3 class="project__title">Azure Databricks DE Streaming Data Project 2026</h3>
+            <p class="project__desc">
+              Real-time streaming pipeline on Azure Databricks — Event Hubs ingestion, Structured Streaming with Auto Loader, and incrementally updated Delta tables.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Azure Databricks</li>
+              <li>Event Hubs</li>
+              <li>Structured Streaming</li>
+              <li>Delta Tables</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">04</span>
+              <div class="project__links">
+                <!-- EDIT HERE: repo + demo links -->
+                <a href="https://github.com/faizahamed2001/Azure-Data-Factory-Project-2026" target="_blank" aria-label="GitHub repository for Project 1" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/Azure-Data-Factory-Project-2026" target="_blank" aria-label="Live demo for Project 1" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <!-- EDIT HERE: project title + description -->
+            <h3 class="project__title">Azure Data Factory Project 2026</h3>
+            <p class="project__desc">
+              Metadata-driven ingestion pipelines in Azure Data Factory — parameterized copy activities, incremental watermark loads, and trigger-based scheduling.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Azure Data Factory</li>
+              <li>Parameterization</li>
+              <li>Incremental Loads</li>
+              <li>Trigger-based Scheduling</li>
+            </ul>
+          </article>
+
+          
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">05</span>
+              <div class="project__links">
+                <a href="https://github.com/faizahamed2001/Microsoft-Fabric-DE-Project-2026" target="_blank" aria-label="GitHub repository for Project 3" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/Microsoft-Fabric-DE-Project-2026" target="_blank" aria-label="Live demo for Project 3" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <h3 class="project__title">Microsoft Fabric DE Project 2026</h3>
+            <p class="project__desc">
+              End-to-end lakehouse in Microsoft Fabric — OneLake storage, Dataflow Gen2 ingestion, PySpark notebooks, and Direct Lake reporting in Power BI.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Microsoft Fabric</li>
+              <li>Dataflow Gen2</li>
+              <li>PySpark</li>
+              <li>Power BI</li>
+            </ul>
+          </article>
+
+          <article class="project reveal" data-reveal>
+            <div class="project__top">
+              <span class="project__index" aria-hidden="true">06</span>
+              <div class="project__links">
+                <a href="https://github.com/faizahamed2001/Uber-Data-Model" target="_blank" aria-label="GitHub repository for Project 6" title="GitHub repo">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                </a>
+                <!-- <a href="https://github.com/faizahamed2001/Uber-Data-Model" target="_blank" aria-label="Live demo for Project 6" title="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <h3 class="project__title">Uber Data Model</h3>
+            <p class="project__desc">
+              A dimensional star schema for ride-hailing trip data — fact tables, conformed dimensions, and analytics-ready outputs.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Relational Data Modeling</li>
+              <li>Facts & Dimensions Tables</li>
+              <li>Star Schema</li>
+            </ul>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- EXPERIENCE (vertical timeline)                                -->
+    <!-- ============================================================= -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section__head reveal" data-reveal>
+          <span class="section__label">04 — Experience</span>
+          <h2 class="section__title" id="experience-heading">Where I've worked</h2>
+        </div>
+
+        <!-- EDIT HERE: add a .timeline__item per role -->
+        <ol class="timeline">
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <h3 class="timeline__role">Senior Data Engineer</h3>
+                <span class="timeline__company">Cognizant</span>
+              </div>
+              <span class="timeline__dates">Jan 2023 — Present · Chennai, India</span>
+              <ul class="timeline__points">
+                <li>Own the end-to-end architecture of production data platforms on Azure Databricks — from ingestion design through Delta Lake modeling to the curated layer serving Power BI.</li>
+                <li>Led migration of legacy batch pipelines to a medallion architecture, cutting end-to-end refresh time from 6 hours to 45 minutes and eliminating 12 manual steps from the daily run.</li>
+                <li>Defined team standards for pipeline development, naming conventions, data quality gates, and CI/CD — adopted across 4 project teams.</li>
+                <li>Optimized Spark and SQL performance through partitioning, Z-ordering, and join strategy, reducing cluster compute cost by 30%.</li>
+                <li>Mentor 3 junior engineers through code review and design walkthroughs, and partner with analysts and product owners to translate business questions into data models.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal" data-reveal>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <!-- EDIT HERE: previous role -->
+                <h3 class="timeline__role">Junior Data Engineer</h3>
+                <span class="timeline__company">Cognizant</span>
+              </div>
+              <span class="timeline__dates">Mar 2022 —  Sept 2022 · Chennai, India</span>
+              <ul class="timeline__points">
+                <li>Built and maintained ETL/ELT pipelines in Azure Data Factory and Databricks, ingesting data from 8 source systems into Delta Lake.</li>
+                <li>Wrote and tuned SQL and PySpark transformations producing 40+ analytics-ready tables for downstream Power BI reporting.</li>
+                <li>Implemented data quality checks — null, duplicate, referential integrity, and reconciliation — catching defects before they reached reporting.</li>
+                <li>Supported production pipelines on rotation, resolving root causes rather than rerunning failures and reducing recurring incidents by 25%.</li>
+                <li>Documented pipeline logic, source-to-target mappings, and a field-level data catalog covering all curated tables.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- CONTACT                                                       -->
+    <!-- ============================================================= -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__head reveal" data-reveal>
+          <span class="section__label">05 — Contact</span>
+          <h2 class="section__title" id="contact-heading">Let's build something</h2>
+        </div>
+
+        <div class="contact">
+          <div class="contact__intro reveal" data-reveal>
+            <p>
+              Open to Data Engineering and AI opportunities. Feel free to reach out by email/phone — I typically respond within a day.
+            </p>
+          </div>
+
+          <ul class="contact__links reveal" data-reveal aria-label="Contact links">
+              <!-- EDIT HERE: email, LinkedIn, GitHub -->
+              <li>
+                <a href="mailto:faizahamed2001@gmail.com">
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  </span>
+                  <span>
+                    <strong>Email Me</strong>
+                    faizahamed2001@gmail.com
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/faiz-ahamed-r-5124881b1/" target="_blank" rel="noopener">
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.75-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z"/></svg>
+                  </span>
+                  <span>
+                    <strong>LinkedIn</strong>
+                    /in/faiz-ahamed-r-5124881b1
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/faizahamed2001" target="_blank" rel="noopener">
+                  <span class="contact__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                  </span>
+                  <span>
+                    <strong>GitHub</strong>
+                    /faizahamed2001
+                  </span>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================= -->
+  <!-- FOOTER                                                        -->
+  <!-- ============================================================= -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a href="#top" class="site-footer__brand">
+        <span aria-hidden="true"></span> FaizFolio
+      </a>
+
+      <ul class="site-footer__social" aria-label="Social links">
+        <!-- EDIT HERE: same links as Contact -->
+        <li>
+          <a href="mailto:faizahamed2001@gmail.com" aria-label="Email Me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/faiz-ahamed-r-5124881b1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.75-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3-2 0-2.3 1.57-2.3 3.2V21H9z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/faizahamed2001" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <p class="site-footer__copy">
+        © <span id="year">2026</span> Faiz. Built with care for better future.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
